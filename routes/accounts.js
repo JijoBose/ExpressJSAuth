@@ -4,6 +4,7 @@ const User = require('../models/users');
 const UserSession = require('../models/userSessions');
 
 router.post('/signup', (req, res, next) => {
+  console.log(req);
   const { body } = req;
   const { password } = body;
   let { email } = body;
